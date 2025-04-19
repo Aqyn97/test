@@ -69,8 +69,14 @@ public class Main {
 //        era.setAge(24242);
 //        System.out.println(era.getAge() +"  " +  era.getName());
 
+        String s = "This is John. He is 27 yeard old";
+        String name = s.substring(8 ,12);
+        String ag = s.substring(20,22);
+        int age = Integer.parseInt(ag);
+        System.out.println(name + " " + age);
 
-
+        Person era = new Person(age , name);
+        System.out.println(era.getAge()  + " " + era.getName());
 
 
 
