@@ -5,7 +5,13 @@ public class collections {
             NewArrayList employees = getEmployess();
 //        arlist adamdar = getAdamdar();
         employees.add("James");
-        employees.delete("Man");
+        employees.add("James");
+        employees.add("James");
+        employees.add("James");
+        employees.add("James");
+        employees.add("James");
+        employees.add("James");
+        employees.add("James");
         for(int i = 0 ; i < employees.getSize(); i++){
             System.out.println(employees.getName(i));
         }
