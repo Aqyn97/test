@@ -16,5 +16,9 @@ public class CatFam {
         this.eyes = eyes;
         this.canEat = canEat;
     }
+    public void eat(){
+        System.out.println("Eating + ");
+    }
+
 
 }
