@@ -5,23 +5,30 @@ public class Box {
     private int width;
     private int length;
 
-//    public void setDimens(int height, int width, int length) {
-//        this.width = width;
-//        this.length = length;
-//        this.height = height;
-//    }
+    public void setDimens(int height, int width, int length) {
+        this.width = width;
+        this.length = length;
+        this.height = height;
+    }
 
     Box(int height, int width, int length) {
         this.width = width;
         this.length = length;
         this.height = height;
     }
-    Box(int size){
-        this(10  ,10 , 10 );
+
+    Box(int size) {
+        this(10, 10, 10);
     }
-    Box(){
+
+    Box() {
         this(10);
     }
+
+    Box(Box another) {
+        this(another.height, another.width, another.length);
+    }
+
 
     Box copy() {
         return new Box(length, width, height);
@@ -42,7 +49,11 @@ public class Box {
         int anotherV = another.getVolume();
         if (currentV > anotherV) {
             System.out.println("1st");
-        } else System.out.println("2nd");
+        } else System.out.println("2nd or equal");
+    }
+
+    protected void showInfo() {
+        System.out.println("height " + height + "\nwidth " + width + "\nlength " + length);
     }
 
 

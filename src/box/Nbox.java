@@ -9,7 +9,20 @@ public class Nbox extends Box {
         this.weight = weight;
     }
 
-    public void getWeight() {
-        System.out.println(weight);
+    public Nbox(int size, int weight) {
+        super(size, size, size);
+        this.weight = weight;
     }
+
+    public Nbox() {
+        this.weight = weight;
+    }
+
+    @Override
+    public void showInfo() {
+        super.showInfo();
+        System.out.println("weight " + weight);
+    }
+
+
 }
