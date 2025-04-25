@@ -16,7 +16,12 @@ public class Box {
         this.length = length;
         this.height = height;
     }
-
+    Box(int size){
+        this(10  ,10 , 10 );
+    }
+    Box(){
+        this(10);
+    }
 
     Box copy() {
         return new Box(length, width, height);
