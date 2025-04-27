@@ -9,11 +9,11 @@ public abstract class Shape {
         this.b = b;
     }
 
-    public int Pr(){
+    public int  Pr() {
         return 0;
     }
 
-    public void getPr(){
+    public void getPr() {
         System.out.println(Pr());
     }
 
@@ -25,7 +25,6 @@ public abstract class Shape {
     public int getB() {
         return b;
     }
-
 
 
 }

@@ -8,11 +8,12 @@ public class Main {
 //        cat.eat();
 //        lion.eat();
 
-        Triangle two = new Triangle(12 ,123 ,123);
-        Square third = new Square(10 , 231);
+        Triangle two = new Triangle(12, 123, 123);
+        Square third = new Square(10, 231);
         two.getPr();
         third.getPr();
-
+        NewTriangle four = new NewTriangle(1 , 2 ,3);
+        four.getPr();
 
 
     }
