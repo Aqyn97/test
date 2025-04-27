@@ -11,8 +11,10 @@ public class Main {
 //        Box second = new Box(first);
 //        first.compare(second);
 
-        Nbox nn = new Nbox(12, 32, 321, 321);
-        nn.showInfo();
+//        Nbox nn = new Nbox(12, 32, 321, 321);
+//        nn.showInfo();
+
+
 
 
     }
