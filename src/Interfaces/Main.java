@@ -1,5 +1,7 @@
 package Interfaces;
 
+import examples.Person;
+
 import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
@@ -45,28 +47,32 @@ public class Main {
 //            one.run();
 //        }
 
-        Person1 bir = new Person1();
-        Person2 eki = new Person2();
-        Person3 ush = new Person3();
+//        Person1 bir = new Person1();
+//        Person2 eki = new Person2();
+//        Person3 ush = new Person3();
+//
+//        ArrayList<Worker> workers = new ArrayList<>();
+//        ArrayList<Driver> drivers = new ArrayList<>();
+//        workers.add(bir);
+//        workers.add(eki);
+//        workers.add(ush);
+//        drivers.add(eki);
+//        drivers.add(ush);
+//        for(Worker worker : workers){
+//            worker.work();
+//        }
+//        for(Driver driver : drivers){
+//            driver.drive();
+//        }
 
-        ArrayList<Worker> workers = new ArrayList<>();
-        ArrayList<Driver> drivers = new ArrayList<>();
-        workers.add(bir);
-        workers.add(eki);
-        workers.add(ush);
-        drivers.add(eki);
-        drivers.add(ush);
-        for(Worker worker : workers){
-            worker.work();
-        }
-        for(Driver driver : drivers){
-            driver.drive();
-        }
-
-
-
-
-
+//        Director director = new Director();
+//        Person1 person1 = new Person1();
+//        director.force(new Worker() {
+//            @Override
+//            public void work() {
+//                System.out.println("something...");
+//            }
+//        });//this is the anonymous class
 
     }
 }
