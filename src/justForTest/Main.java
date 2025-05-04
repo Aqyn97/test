@@ -27,6 +27,9 @@ public class Main {
 //       int out = Integer.parseInt(c);
 //        System.out.println(out);
 
+        String s = "abcabc";
+
+
 
 
 
