@@ -1,12 +1,13 @@
 package Interfaces;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        Cat cat = new Cat();
-        Fish fish = new Fish();
+//        Dog dog = new Dog();
+//        Cat cat = new Cat();
+//        Fish fish = new Fish();
 
 //
 //        Animal animal = new Dog();// it calls upcast
@@ -37,12 +38,32 @@ public class Main {
 //            animal.run();
 //        }//here we will try to use interface
 
-        ArrayList<AbleToRun> animal1 = new ArrayList<>();
-        animal1.add(dog);
-        animal1.add(cat);
-        for(AbleToRun one : animal1){
-            one.run();
+//        ArrayList<AbleToRun> animal1 = new ArrayList<>();
+//        animal1.add(dog);
+//        animal1.add(cat);
+//        for(AbleToRun one : animal1){
+//            one.run();
+//        }
+
+        Person1 bir = new Person1();
+        Person2 eki = new Person2();
+        Person3 ush = new Person3();
+
+        ArrayList<Worker> workers = new ArrayList<>();
+        ArrayList<Driver> drivers = new ArrayList<>();
+        workers.add(bir);
+        workers.add(eki);
+        workers.add(ush);
+        drivers.add(eki);
+        drivers.add(ush);
+        for(Worker worker : workers){
+            worker.work();
         }
+        for(Driver driver : drivers){
+            driver.drive();
+        }
+
+
 
 
 
